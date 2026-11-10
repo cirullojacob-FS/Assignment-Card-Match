@@ -1,0 +1,21 @@
+{
+  "name": "card-flip-gamecirullojacob",
+  "version": "1.0.0",
+  "description": "A 6-card memory match game with a strict 3-attempt limit constraint.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build:ts": "tsc",
+    "build:scss": "sass src/scss/main.scss dist/style.css",
+    "build": "npm run build:ts && npm run build:scss",
+    "watch": "concurrently \"tsc -w\" \"sass src/scss/main.scss dist/style.css -w\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "sass": "^1.77.0",
+    "typescript": "^5.4.5"
+  }
+}
